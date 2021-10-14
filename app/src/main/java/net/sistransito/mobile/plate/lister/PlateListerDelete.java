@@ -150,7 +150,7 @@ public class PlateListerDelete extends AppCompatActivity implements OnClickListe
 					AlertDialog.THEME_HOLO_LIGHT);
 			pDialog.setMax(100);
 			pDialog.setCancelable(false);
-			pDialog.setMessage(getResources().getString(R.string.deletando));
+			pDialog.setMessage(getResources().getString(R.string.deleting));
 			pDialog.show();
 		}
 

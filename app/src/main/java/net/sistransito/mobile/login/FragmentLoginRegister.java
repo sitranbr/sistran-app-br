@@ -211,7 +211,7 @@ public class FragmentLoginRegister extends Fragment implements
             etPassword.setError(getResources().getString(R.string.invalid_in));
             return false;
         } else if (fileName == null) {
-            Toast.makeText(getActivity(), getResources().getString(R.string.erro_carregar_img),
+            Toast.makeText(getActivity(), getResources().getString(R.string.erro_loading_img),
                     Toast.LENGTH_LONG).show();
             return false;
         } else {
@@ -251,13 +251,13 @@ public class FragmentLoginRegister extends Fragment implements
                 params.put("profile_image", fileName);
 
             } else {
-                Toast.makeText(getActivity(), getResources().getString(R.string.erro_carregar_img),
+                Toast.makeText(getActivity(), getResources().getString(R.string.erro_loading_img),
                         Toast.LENGTH_LONG).show();
                 fileName = null;
             }
         } catch (Exception e) {
 
-            Toast.makeText(getActivity(), getResources().getString(R.string.erro_desconhecido), Toast.LENGTH_LONG)
+            Toast.makeText(getActivity(), getResources().getString(R.string.unknown_error), Toast.LENGTH_LONG)
                     .show();
             fileName = null;
         }

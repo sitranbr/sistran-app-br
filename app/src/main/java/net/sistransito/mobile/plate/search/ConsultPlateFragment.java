@@ -500,12 +500,12 @@ public class ConsultPlateFragment extends Fragment implements
             typeSearch = "plate";
             if (character.length() != LENGTH_PLATE_CHARACTER) {
                 etPlateLetters.setError(getResources().getString(
-                        R.string.letras_da_placa));
+                        R.string.letters_of_the_plate));
                 etPlateLetters.requestFocus();
                 return false;
             } else if (number.length() != LENGTH_PLATE_NUMBER) {
                 etPlateNumbers.setError(getResources().getString(
-                        R.string.numeros_da_placa));
+                        R.string.plate_numbers));
                 etPlateNumbers.requestFocus();
                 return false;
             } else {
@@ -527,7 +527,7 @@ public class ConsultPlateFragment extends Fragment implements
             typeSearch = "plate";
             if (placaMercosul.length() != LENGTH_PLATE_MERCOSUL) {
                 etPlateMercosul.setError(getResources().getString(
-                        R.string.placa_mercosul_field));
+                        R.string.plate_mercosul_field));
                 etPlateMercosul.requestFocus();
                 return false;
             } else {
@@ -549,7 +549,7 @@ public class ConsultPlateFragment extends Fragment implements
             typeSearch = "plateSeal";
             if (numeroLacre.equals(null)) {
                 etSealNumber.setError(getResources().getString(
-                        R.string.lacre_field));
+                        R.string.seal_field));
                 etSealNumber.requestFocus();
                 return false;
             } else {

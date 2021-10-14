@@ -288,17 +288,17 @@ public class SearchCnhFragment extends Fragment implements
 	private boolean checkInput() {
 		if (rbRegister.isChecked() && etRegister.getText().toString().isEmpty()) {
 			etRegister.setError(getResources().getString(
-					R.string.dados_da_cnh));
+					R.string.drivers_license_data));
 			etIdentity.requestFocus();
 			return false;
 		} else if (rbIdentity.isChecked() && etIdentity.getText().toString().isEmpty()) {
 			etIdentity.setError(getResources().getString(
-					R.string.dados_da_cnh));
+					R.string.drivers_license_data));
 			etIdentity.requestFocus();
 			return false;
 		} else if (rbCnhCpf.isChecked()&& etCnhCpf.getText().toString().isEmpty()) {
 			etCnhCpf.setError(getResources().getString(
-					R.string.cpf_condutor_cnh_ppd));
+					R.string.cpf_drivers_license));
 			etCnhCpf.requestFocus();
 			return false;
 		} else if (rbCnhName.isChecked() && etName.getText().toString().isEmpty()) {

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dip"
+    android:background="@color/gray_2"
+    android:padding="0dip" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_tabela_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:completionThreshold="3"
+                android:gravity="left|center_vertical"
+                android:inputType="textCapCharacters|textMultiLine"
+                android:hint="Pesquise infraçoes"
+                android:paddingLeft="@dimen/widght_padding"
+                android:paddingRight="@dimen/widght_padding_3"
+                android:backgroundTint="@color/gray_2"
+                android:textColor="@color/primary"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="5dp"
+                android:paddingTop="@dimen/widght_padding_2"
+                android:paddingBottom="@dimen/widght_padding_2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textCursorDrawable="@null" />
+
+
+
+            <TextView
+                android:id="@+id/tv_clear_search"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_marginRight="10dip"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/btn_clear_text" />
+
+            <TextView
+                android:id="@+id/tv_lupa_search"
+                android:layout_width="38dip"
+                android:layout_height="38dip"
+                android:layout_marginRight="10dip"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/icone_search" />
+
+        </FrameLayout>
+
+
+
+</RelativeLayout>

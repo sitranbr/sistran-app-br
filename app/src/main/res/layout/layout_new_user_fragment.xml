@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_margin_buttom">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/signup_name"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_autority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top_3"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/ic_authority"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/orgao_transito"
+                android:inputType="text"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_matricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top_3"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/ic_registation"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/matricula"
+                android:inputType="number"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top_3"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/ic_cpf"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/cpf"
+                android:inputType="number"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top_3"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/signup_email"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/login_login"
+                android:inputType="text"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top_3"
+                android:background="@color/yellow_light"
+                android:drawableLeft="@drawable/signup_password"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/widght_margin_top_2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/im_prifile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login"
+            android:src="@drawable/ic_account_circle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.rey.material.widget.Button
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_whight"
+            android:padding="@dimen/widght_padding"
+            android:text="@string/novo_cadastro"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+    <com.rey.material.widget.TextView
+        android:layout_margin="@dimen/widght_margin"
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/btn_login"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/color_state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

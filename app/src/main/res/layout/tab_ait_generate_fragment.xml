@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/widght_padding" >
+
+        <LinearLayout
+            android:id="@+id/ll_imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:visibility="visible"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/widght_padding" >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/padding_left_foto"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/padding_foto"
+                android:src="@drawable/photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:visibility="visible"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/widght_padding" >
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/padding_left_foto"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/padding_foto"
+                android:src="@drawable/photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/widght_padding"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_check_ait_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/btn_organge"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/botao_conferir_auto"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <FrameLayout
+                android:id="@+id/fragment_container_auto"
+                android:background="@color/material_drawer_background"
+                android:layout_below="@id/btn_check_ait_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_cancel_ait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/btn_organge"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/botao_descartar_auto"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_generate_ait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/btn_organge"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/botao_finalizar_auto"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

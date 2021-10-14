@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:id="@+id/ll_registro_uf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/natureza_format"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tabela_gravidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:text="Gravissíma 5X"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/pontos_format"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tabela_pontuacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:text="7"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/valor_format"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tabela_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:text="R$ 293,34"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/responsavel_format"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tabela_responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:text="Condutor"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/competencia_format"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:id="@+id/tv_tabela_competencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="ESTADUAL/RODOV"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/medidas_format"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_tabela_medidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:text="Medidas administrativas"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/obs_format"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_tabela_obs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:text="Observações"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/notas_format"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_tabela_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:text="Informações"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+
+</LinearLayout>

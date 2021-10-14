@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.sistransito">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="net.sistransito.SistransitoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MaterialTheme">
+        <activity android:name="net.sistransito.mobile.util.RetrovitActivity"></activity>
+        <activity
+            android:name="net.sistransito.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sistransito.mobile.login.ActivityLogin"
+            android:theme="@style/MaterialTheme" />
+        <activity android:name="net.sistransito.mobile.plate.lister.PlateLister" />
+        <activity android:name="net.sistransito.mobile.plate.lister.PlateListerDelete" />
+        <!--
+        receiver android:name="net.sistransito.mobile.SampleAlarmReceiver" >
+        </receiver>
+        <receiver
+            android:name="net.sistransito.mobile.SampleBootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="net.sistransito.mobile.SampleSchedulingService" />
+        -->
+        <receiver android:name="net.sistransito.mobile.main.BalanceAlarmReceiver" />
+        <receiver
+            android:name="net.sistransito.mobile.main.BalanceBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="net.sistransito.mobile.main.BalanceSchedulingService" />
+
+        <activity
+            android:name="net.sistransito.mobile.main.MainUserActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name="net.sistransito.mobile.ait.AitActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name="net.sistransito.mobile.aitcompany.AitCompanyActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity android:name="net.sistransito.mobile.ait.lister.AitLister" />
+        <activity
+            android:name="net.sistransito.mobile.tav.TavActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity android:name="net.sistransito.mobile.tav.lister.TAVLister" />
+        <activity
+            android:name="net.sistransito.mobile.tca.TcaActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity android:name="net.sistransito.mobile.tca.lister.TcaLister" />
+        <activity
+            android:name="net.sistransito.mobile.rrd.RrdActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity android:name="net.sistransito.mobile.rrd.lister.RrdLister" />
+        <activity android:name="net.sistransito.mobile.database.sync.ConnectionActivity" />
+    </application>
+
+</manifest>

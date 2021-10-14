@@ -1,0 +1,11 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/captures
+*.idea
+*.bat
+*build
+SistransitoMobile.iml
+app/app.iml

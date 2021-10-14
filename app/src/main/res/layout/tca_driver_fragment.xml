@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/widght_padding" >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/primary"
+            android:layout_marginTop="@dimen/padding_top_edit"
+            android:layout_marginBottom="@dimen/padding_top_edit" >
+
+            <EditText
+                android:id="@+id/et_tca_nome_do_condutor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/nome_condutor"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/gray_5"
+                android:inputType="textCapCharacters"
+                android:paddingBottom="@dimen/widght_padding_6" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/indicator_width" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginBottom="@dimen/padding_top_edit" >
+
+                    <EditText
+                        android:id="@+id/et_tca_cnh_ppd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="@string/tca_CNH_PPD"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="@color/gray_5"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/widght_padding_6" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/indicator_width" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginBottom="@dimen/padding_top_edit" >
+
+                    <EditText
+                        android:id="@+id/et_tca_cpf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="@string/tca_CPF"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="@color/gray_5"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/widght_padding_6" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/primary"
+            android:layout_marginBottom="@dimen/padding_top_edit" >
+
+            <EditText
+                android:id="@+id/et_tca_endereco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/tca_endereco"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/gray_5"
+                android:inputType="number"
+                android:paddingBottom="@dimen/widght_padding_6" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/primary"
+            android:layout_marginBottom="@dimen/padding_top_edit" >
+
+            <EditText
+                android:id="@+id/et_tca_bairro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/tca_bairro"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/gray_5"
+                android:inputType="number"
+                android:paddingBottom="@dimen/widght_padding_6" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/indicator_width" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginBottom="@dimen/padding_top_edit" >
+
+                    <EditText
+                        android:id="@+id/et_tca_municipio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="@string/tca_municipio"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="@color/gray_5"
+                        android:inputType="textCapCharacters"
+                        android:paddingBottom="@dimen/widght_padding_6" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/indicator_width" >
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/sp_tca_municipio_uf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_arrowColor="@color/primary"
+                    app:ms_arrowSize="12dp"
+                    app:ms_floatingLabelColor="@color/primary"
+                    app:ms_floatingLabelText="@string/tca_UF"
+                    app:ms_alignLabels="true"
+                    app:ms_hintColor="@color/primary"
+                    app:ms_hint="@string/tca_UF"
+                    app:ms_multiline="true"
+                    app:ms_baseColor="@color/primary" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:gravity="start"
+            android:padding="@dimen/widght_padding"
+            android:text="@string/tav_dados_veiculo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/yellow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_1"
+            android:background="@color/yellow_deep_2"
+            android:layout_marginBottom="@dimen/padding_top_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/indicator_width" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginBottom="@dimen/padding_top_edit" >
+
+                    <EditText
+                        android:id="@+id/et_tca_placa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="@string/placa"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="@color/gray_5"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/widght_padding_6" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/indicator_width" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginBottom="@dimen/padding_top_edit" >
+
+                    <EditText
+                        android:id="@+id/et_tca_placa_uf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="@string/tca_UF"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="@color/gray_5"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/widght_padding_6" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/primary"
+            android:layout_marginBottom="@dimen/padding_top_edit" >
+
+            <EditText
+                android:id="@+id/et_tca_model"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/marca_modelo"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/gray_5"
+                android:inputType="textCapCharacters"
+                android:paddingBottom="@dimen/widght_padding_6" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

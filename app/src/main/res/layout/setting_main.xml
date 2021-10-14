@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding_3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:paddingTop="@dimen/widght_padding"
+            android:text="@string/config_printer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_5"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_printer_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_5" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_setting_printer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:padding="@dimen/widght_padding_4"
+                    android:background="@color/primary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_printer"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:paddingTop="@dimen/widght_padding"
+            android:text="@string/setting_titulo_uf"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_5"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_uf_default"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_5" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_setting_uf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:padding="@dimen/widght_padding_4"
+                    android:background="@color/primary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_spinner_uf"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color"
+            android:layout_marginBottom="@dimen/widght_padding" />
+
+        <com.rey.material.widget.Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/btn_lobster"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:id="@+id/btn_update"
+            android:padding="@dimen/widght_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:text="@string/btn_update" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin"
+                android:paddingTop="@dimen/widght_padding"
+                android:text="@string/config_geral"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray_5"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/indicator_height_4"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vibrate"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/gray_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical" >
+
+                    <com.rey.material.widget.CheckBox
+                        style="@style/Material.Drawable.CheckBox"
+                        app:cbd_strokeColor="@color/primary"
+                        android:id="@+id/checkBoxVibarte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_rrd_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vibrate_hint"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/indicator_height_1"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ringtone"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/gray_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical" >
+
+                    <com.rey.material.widget.CheckBox
+                        style="@style/Material.Drawable.CheckBox"
+                        app:cbd_strokeColor="@color/primary"
+                        android:id="@+id/checkBoxRington"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ringtone_hint"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/indicator_height_1"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:paddingTop="@dimen/widght_padding"
+            android:text="@string/config_backup"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_5"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_backup"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/Material.Drawable.CheckBox"
+                    app:cbd_strokeColor="@color/primary"
+                    android:id="@+id/checkBoxAutoBackup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_backup_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_1"
+            android:background="@color/line_color" />
+
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin"
+            android:paddingTop="@dimen/widght_padding"
+            android:text="@string/titulo_sincronizacao"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_5"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_height_4"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin" >
+
+            <com.rey.material.widget.Button
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:background="@drawable/btn_lobster"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_sync"
+                android:padding="@dimen/widght_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/strat_sync" />
+
+            <TextView
+                android:paddingRight="@dimen/widght_padding_3"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_sync"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btn_sync"
+                android:gravity="left|center_vertical"
+                android:text="@string/strat_sync_info"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5"
+                android:layout_marginBottom="@dimen/widght_padding_2" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

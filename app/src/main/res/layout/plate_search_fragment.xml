@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_margin_buttom"
+    android:paddingLeft="@dimen/layout_margin_left_right"
+    android:paddingRight="@dimen/layout_margin_left_right"
+    android:paddingTop="@dimen/layout_margin_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_parent_result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/resutl_layout_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_child_result_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resutl_layout_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_result_placa_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widght_margin"
+                    android:padding="@dimen/widght_padding"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <com.rey.material.widget.Button
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:id="@+id/btn_autuar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widght_margin"
+                    android:background="@drawable/btn_yellow"
+                    android:drawableLeft="@drawable/ic_autor"
+                    android:drawablePadding="@dimen/widght_padding"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/widght_padding_2"
+                    android:text="@string/autuar"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/pink" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin_top_2"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_type_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_search_placa"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/placa"
+                    android:checked="true"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+                <RadioButton
+                    android:id="@+id/rb_search_chassi"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_chassi"
+                    android:checked="false"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_radio_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin_top_2"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_type_search_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_search_mercosul"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_plate_mercosul"
+                    android:checked="false"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+                <RadioButton
+                    android:id="@+id/rb_search_vis"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_vis"
+                    android:checked="false"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_radio_lacre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin_top_2"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_type_search_lacre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_search_lacre"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_lacre"
+                    android:checked="false"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+                <RadioButton
+                    android:id="@+id/rb_search_motor"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_motor"
+                    android:checked="false"
+                    android:buttonTint="@color/yellow_light"
+                    android:textColor="@color/yellow_light" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_placa_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widght_margin_top_2"
+            android:background="@color/gray_2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/et_letras_da_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="3"
+                android:hint="@string/letras_da_placa"
+                android:inputType="textCapCharacters"
+                android:maxLength="3"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"></EditText>
+
+            <EditText
+                android:id="@+id/et_numeros_da_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_number"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="3"
+                android:hint="@string/numeros_da_placa"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/et_chassi_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:maxLength="17"
+                android:hint="@string/numero_do_chassi"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/et_mercosul_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:maxLength="17"
+                android:hint="@string/numero_placa_mercosul"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/et_vis_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:maxLength="17"
+                android:hint="@string/numero_do_vis"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/et_lacre_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/numero_do_lacre"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/et_motor_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/edittext_bacground"
+                android:drawableLeft="@drawable/ic_character"
+                android:drawablePadding="@dimen/widght_padding"
+                android:ems="10"
+                android:hint="@string/numero_do_motor"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/widght_padding"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/cb_pesquisa_offline"
+                style="@style/Material.Drawable.CheckBox"
+                app:cbd_strokeColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="0dip"
+                android:text="@string/consulta_off_line"
+                android:textColor="@color/primary"
+                />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btn_consultar_placa"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                android:drawableStart="@drawable/ic_send"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/botao_consultar"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

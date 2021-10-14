@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_auto"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_ait"
+        android:layout_gravity="center"
+        android:padding="@dimen/widght_padding"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_marginTop="@dimen/widght_padding_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_4"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_codigo_ait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_orgao"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_company_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_numero"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_identificacao_veiculo"
+        android:layout_gravity="start"
+        android:padding="@dimen/widght_padding"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_placa_uf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_placa_veiculo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_plate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_uf_cnh"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_state_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_chassi"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_chassi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_marca_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_marca"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_vehicle_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_modelo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_vehicle_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_especie_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_especie"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_vehicle_species"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_categoria"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_vehicle_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_nome_condutor"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_driver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_condutor_cnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_registro_cnh"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_cnh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_uf_cnh"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_state_cnh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_identificacao_local"
+        android:layout_gravity="left"
+        android:padding="@dimen/widght_padding"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_local"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_municipio"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_auto_data_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_data"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_hora"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_medidas_adm"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_measures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_titulo_infracao"
+        android:layout_gravity="left"
+        android:padding="@dimen/widght_padding"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_4"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_codigo_infracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_cod_infracao"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/indicator_width" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/auto_amparo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ait_legal_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/widght_padding_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_descricao"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height_1"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widght_padding"
+        android:text="@string/auto_obs"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_ait_observations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/widght_padding_3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_5" />
+
+
+</LinearLayout>

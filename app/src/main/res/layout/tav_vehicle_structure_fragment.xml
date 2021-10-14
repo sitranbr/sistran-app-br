@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/widght_padding_3" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/cabeca_de_alavanca"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/cabeca_de_alavanca"
+                    style="@style/Theam.Spinner_theam"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/primary"
+                    android:padding="@dimen/widght_padding"
+                    android:textDirection="firstStrong" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/carroceria"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/carroceria"
+                    style="@style/Theam.Spinner_theam"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/primary"
+                    android:padding="@dimen/widght_padding"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/forro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/forro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lataria_capo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/lataria_capo"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lataria_lado_direito"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/lataria_lado_direito"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lataria_lado_esquerdo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/lataria_lado_esquerdo"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lataria_tapa_porta_mala"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/lataria_tapa_porta_mala"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lataria_teto"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/lataria_teto"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/motor"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/motor"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/painel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/painel"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pintura_capo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pintura_capo"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pintura_lado_direito"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pintura_lado_direito"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pintura_lado_esquerdo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pintura_lado_esquerdo"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pintura_porta_mala"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pintura_porta_mala"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pintura_teto"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pintura_teto"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/radiador"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/radiador"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/vidros_laterais"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/vidros_laterais"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/vidro_para_brisa"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/vidro_para_brisa"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/vidro_traseiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/vidro_traseiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

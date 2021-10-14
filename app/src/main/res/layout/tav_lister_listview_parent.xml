@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/log_list_selector"
+    android:orientation="horizontal"
+    android:padding="@dimen/widght_padding" >
+
+    <TextView
+        android:id="@+id/log_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/log_nome_do_proprietario"
+        android:layout_alignParentTop="true"
+        android:text="Placa : OFM3050"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/log_nome_do_proprietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/log_plate"
+        android:layout_marginLeft="@dimen/log_margin_left"
+        android:text="nome_do_proprietario"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/log_gray" />
+
+    <TextView
+        android:id="@+id/log_number_do_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/log_plate"
+        android:layout_marginRight="@dimen/widght_margin"
+        android:text="number_do_auto: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/log_blue" />
+
+</RelativeLayout>

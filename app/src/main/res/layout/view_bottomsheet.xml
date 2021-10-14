@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding_4"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.rey.material.widget.TextView
+        android:id="@+id/tv_message"
+        android:textColor="@color/red"
+        android:layout_margin="@dimen/widght_margin"
+        android:padding="@dimen/widght_padding"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="left"/>
+</LinearLayout>

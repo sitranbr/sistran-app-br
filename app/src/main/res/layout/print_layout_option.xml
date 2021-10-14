@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/widght_padding"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/widght_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/widght_padding"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_via_agente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/btn_organge"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/via_agente"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/btn_via_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:background="@drawable/btn_green"
+                android:drawablePadding="@dimen/widght_padding"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/via_condutor"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

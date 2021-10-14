@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/widght_padding_3" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/antena_de_radio"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/antena_de_radio"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/bagageiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/bagageiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/bancos"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/bancos"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/bateria"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/bateria"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/calota"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/calota"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/condicionador_de_ar"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/condicionador_de_ar"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/extintor_de_incendio"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/extintor_de_incendio"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/farolete_dianteiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/farolete_dianteiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/farolete_traseiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/farolete_traseiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/macaco"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/macaco"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/para_choque_dianteiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/para_choque_dianteiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/para_choque_traseiro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/para_choque_traseiro"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/para_sol_do_condutor"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/para_sol_do_condutor"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pneus"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pneus"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pneus_estepe"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/pneus_estepe"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/radio"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/radio"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/retrovisor_interno"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/retrovisor_interno"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/retrovisor_externo_direito"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/retrovisor_externo_direito"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tapete"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/tapete"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/triangulo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/triangulo"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/volante"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/volante"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widght_margin_top"
+                android:layout_marginTop="@dimen/widght_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/guidam"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray_5" />
+
+                <Spinner
+                    android:id="@+id/guidam"
+                    style="@style/Theam.Spinner_theam"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/widght_padding"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

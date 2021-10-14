@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical"
+    android:padding="@dimen/widght_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/widght_padding" >
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_rrd_dias_regularizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrowColor="@color/primary"
+            app:ms_arrowSize="12dp"
+            app:ms_floatingLabelColor="@color/primary"
+            app:ms_floatingLabelText="@string/select_dias_rrd"
+            app:ms_alignLabels="true"
+            app:ms_hintColor="@color/primary"
+            app:ms_hint="@string/hint_dias_rrd"
+            app:ms_multiline="true"
+            app:ms_baseColor="@color/primary" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/primary"
+            android:layout_marginBottom="@dimen/padding_top_edit" >
+
+            <EditText
+                android:id="@+id/et_rrd_motivo_recolhimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widght_padding_3"
+                android:ellipsize="start"
+                android:ems="10"
+                android:scrollbars="vertical"
+                android:hint="@string/rrd_motivo_para_recolhimento"
+                android:gravity="top"
+                android:inputType="textMultiLine|textCapCharacters"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingBottom="@dimen/widght_padding_6"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/gray_5"
+                android:textCursorDrawable="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/widght_padding" >
+
+            <Button
+                android:id="@+id/btn_rrd_conferir"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/indicator_width"
+                android:layout_weight="1"
+                android:background="@drawable/btn_yellow_2"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/botao_conferir"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_rrd_imprimir"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/indicator_width"
+                android:layout_weight="1"
+                android:background="@drawable/btn_yellow_2"
+                android:padding="@dimen/widght_padding"
+                android:text="@string/gerar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

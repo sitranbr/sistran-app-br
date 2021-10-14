@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/widght_padding" >
+
+        <Button
+            android:id="@+id/btn_tav_estrutura"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/indicator_width"
+            android:layout_weight="1"
+            android:background="@drawable/btn_yellow_3"
+            android:drawableLeft="@drawable/tav_es_indicator"
+            android:padding="@dimen/widght_padding"
+            android:text="@string/estrutura"
+            android:textColor="@color/color_state_5" />
+
+        <Button
+            android:id="@+id/btn_tav_acessorios"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/indicator_width"
+            android:layout_weight="1"
+            android:background="@drawable/btn_yellow_3"
+            android:drawableLeft="@drawable/tav_ac_indicator"
+            android:padding="@dimen/widght_padding"
+            android:text="@string/acessorios"
+            android:textColor="@color/color_state_5" />
+    </LinearLayout>
+
+    <net.sistransito.mobile.viewpager.AnySwipeableViewPager
+        android:id="@+id/vp_tav_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@color/yellow" />
+
+</RelativeLayout>
